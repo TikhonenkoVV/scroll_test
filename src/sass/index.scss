@@ -1,0 +1,54 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    gap: 20px;
+    padding: 20px;
+}
+
+input,
+button {
+    padding: 8px 16px;
+}
+
+.scroll-test-box {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    flex-basis: calc((100% - 20px) / 2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: calc(100% - 40px);
+}
+
+.test-click-box,
+.test-scroll-box {
+    display: flex;
+    gap: 20px;
+}
+.collection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100%;
+    overflow-y: scroll;
+}
+.collection__item {
+    flex-basis: calc((100% - 40px) / 3);
+    height: 200px;
+    background-color: tomato;
+    &--throttle {
+        background-color: #4d2121;
+    }
+}
